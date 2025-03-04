@@ -4,4 +4,4 @@ const transferWindowDiv = document.getElementById('transferWindow');
 const today = new Date();
 const windowOpen = new Date(2025, 5, 12);
 const timeTil = (windowOpen.getTime() / MILLISECONDS_TO_SECONDS - today.getTime() / MILLISECONDS_TO_SECONDS) / SECONDS_TO_DAYS;
-transferWindowDiv.innerHTML = `Days Until Transfer Window Opens = ${Math.round(timeTil) + 1}`;
+transferWindowDiv.innerHTML = `Days Until Transfer Window Opens = ${Math.floor(timeTil) + 1}`;
