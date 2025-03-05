@@ -1,7 +1,7 @@
 const MILLISECONDS_TO_SECONDS = 1000;
 const SECONDS_TO_DAYS = 60 * 60 * 24;
 const transferWindowDiv = document.getElementById('transferWindow');
-const today = new Date(2025, 7, 2);
+const today = new Date();
 const windowOpen = new Date(2025, 5, 12);
 const windowClose = new Date(2025, 7, 29);
 //Check if the transfer window has started or not
