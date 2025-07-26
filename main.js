@@ -12,3 +12,19 @@ if(today.getTime() > windowOpen.getTime()) {
     const timeTil = (windowOpen.getTime() / MILLISECONDS_TO_SECONDS - today.getTime() / MILLISECONDS_TO_SECONDS) / SECONDS_TO_DAYS;
     transferWindowDiv.innerHTML = `Days Until Transfer Window Opens = ${Math.floor(timeTil) + 1}`;
 }
+
+const myElement = document.getElementById('words');
+
+const spinAnimation = [
+  { transform: 'rotate(0deg)' },
+  { transform: 'rotate(360deg)' }
+];
+
+const spinTiming = {
+  duration: 5000, // 2 seconds
+  iterations: Infinity, // Spin continuously
+  easing: 'linear' // Smooth, consistent speed
+};
+
+myElement.animate(spinAnimation, spinTiming);
+
